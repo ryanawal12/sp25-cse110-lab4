@@ -30,6 +30,7 @@
     F - `true === Boolean(2)` yields `true`. Boolean(2) → true (since 2 is truthy) → true === true → true
 15. The `==` operator checks if two values are equal **after** converting them to the same type. This means it might treat different types as equal if their values are close enough (type coercion). On the other hand, `===` checks if both the **value and the type** are the same. No conversions happen — it’s stricter. Some examples are as follows: 2 == '2' // true  → because the string '2' gets converted to number 2, while 2 === '2' // false → because one is a number and the other is a string
 16. Code present in part2-question16.js
-17. g
-18. h
+17. The result of calling `modifyArray([1, 2, 3], doSomething)` is: `[2, 4, 6]`. The `modifyArray` function takes two arguments — an array and a callback function. In this case, the array is `[1, 2, 3]`, and the callback function is doSomething, which simply returns the number multiplied by 2. This results in `[2, 4, 6]`.
+18. Code present in part2-question18.js
+19. 
 
