@@ -8,4 +8,5 @@
 8. The function will return `[50, 100, 150]`. The input prices are `[100, 200, 300]` and the `dicsount` is `0.5`. Multiplying each price with `(1-discount)`, we get `[50, 100, 150]`, which is rounded by the function (although already integers), pushed to discounted array and returned by the function without error.
 9. Line 11, the code throws a `ReferenceError: i is not defined`. The variable `i` was declared using `let` inside the `for` loop, which makes it block-scoped. This means `i` is only accessible within the `for` loop block. When `console.log(i)` runs at line 11 (outside the loop), JS cannot find the variable, and the program crashes with the error.
 10. At line 12, the code prints `3`. The variable `length` was declared using `const` at line 4 and assigned the value of `prices.length`, which is `3`. Since `length` is in the outer function scope, it is accessible at line 12 - and there is no error in printing.
-11. 
+11. The function will return `[50, 100, 150]`. The input prices are `[100, 200, 300]` and the `dicsount` is `0.5`. Multiplying each price with `(1-discount)`, we get `[50, 100, 150]`. These values are pushed into the `discounted` array and returned. All variables are scoped using `const` and `let`, so no errors occur.
+12. 
