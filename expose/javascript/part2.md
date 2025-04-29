@@ -1,1 +1,3 @@
-
+1. Line 12, the code prints `3`. The variable `i` was declared using `var`, which is **function-scoped** and not block-scoped. So even though the `for` loop has finished running, `i` is still accessible outside the loop inside the function. At the end of the loop, `i` is incremented one last time after `i = 2`, so `i` becomes `3`. Hence `console.log(i)` running at line 12 prints `3` without any errors.
+2. Line 13, the code prints `150` - the last value of `discountedPrice`. The `discountedPrice` variable was declared using `var`, so it is function-scoped and not block-scoped. Even though `discountedPrice` was declared inside the `for` loop, it remains accessible throughout the whole function after the loop finishes. During the last loop iteration, `prices[2]` was `300`, so: 300 × (1 − 0.5) = 150. `console.log(discountedPrice)` thus runs at line 13 and prints `150`.
+3. 
