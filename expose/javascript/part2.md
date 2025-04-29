@@ -32,5 +32,9 @@
 16. Code present in part2-question16.js
 17. The result of calling `modifyArray([1, 2, 3], doSomething)` is: `[2, 4, 6]`. The `modifyArray` function takes two arguments — an array and a callback function. In this case, the array is `[1, 2, 3]`, and the callback function is doSomething, which simply returns the number multiplied by 2. This results in `[2, 4, 6]`.
 18. Code present in part2-question18.js
-19. 
+19. The output of the above code is:
+    `1
+    \4
+    \3
+    \2`
 
