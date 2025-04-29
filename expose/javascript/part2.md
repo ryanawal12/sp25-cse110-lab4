@@ -34,7 +34,7 @@
 18. Code present in part2-question18.js
 19. The output of the above code is:
     `1
-    \4
-    \3
-    \2`
+    /4
+    /3
+    /2`
 
