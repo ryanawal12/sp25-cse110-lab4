@@ -28,4 +28,10 @@
     D - `2 === '2'` yields `false`. === requires strict equality → different types (number vs. string)
     E - `true == 2` yields `false`. true is converted to 1 → 1 == 2 → false
     F - `true === Boolean(2)` yields `true`. Boolean(2) → true (since 2 is truthy) → true === true → true
-15. 
+15. The `==` operator checks if two values are equal **after** converting them to the same type. This means it might treat different types as equal if their values are close enough (type coercion). On the other hand, `===` checks if both the **value and the type** are the same. No conversions happen — it’s stricter. Some examples are as follows:
+2 == '2'     // true  → because the string '2' gets converted to number 2, while
+2 === '2'    // false → because one is a number and the other is a string
+16. f
+17. g
+18. h
+
