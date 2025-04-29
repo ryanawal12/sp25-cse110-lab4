@@ -22,4 +22,10 @@
     F - `false + null` yields `0`. false → 0, null → 0, 0 + 0 = 0.
     G - `'3' + undefined` yields `3undefined`. undefined becomes the string 'undefined'.
     H - `'3' - undefined` yields `NaN`. '3' becomes 3, but undefined cannot be converted to a valid number.
-
+14. A - `'2' > 1` yields `true`. 2' is coerced to the number 2 → 2 > 1 → true
+    B - `'2' < '12` yields `false`. Both are strings → compared lexicographically → '2' > '1', so false.
+    C - `2 == '2'` yields `true`. == allows type coercion → '2' is converted to 2 → 2 == 2 → true.
+    D - `2 === '2'` yields `false`. === requires strict equality → different types (number vs. string)
+    E - `true == 2` yields `false`. true is converted to 1 → 1 == 2 → false
+    F - `true === Boolean(2)` yields `true`. Boolean(2) → true (since 2 is truthy) → true === true → true
+15. 
