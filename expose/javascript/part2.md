@@ -9,24 +9,24 @@
 9. Line 11, the code throws a `ReferenceError: i is not defined`. The variable `i` was declared using `let` inside the `for` loop, which makes it block-scoped. This means `i` is only accessible within the `for` loop block. When `console.log(i)` runs at line 11 (outside the loop), JS cannot find the variable, and the program crashes with the error.
 10. At line 12, the code prints `3`. The variable `length` was declared using `const` at line 4 and assigned the value of `prices.length`, which is `3`. Since `length` is in the outer function scope, it is accessible at line 12 - and there is no error in printing.
 11. The function will return `[50, 100, 150]`. The input prices are `[100, 200, 300]` and the `dicsount` is `0.5`. Multiplying each price with `(1-discount)`, we get `[50, 100, 150]`. These values are pushed into the `discounted` array and returned. All variables are scoped using `const` and `let`, so no errors occur.
-12. A - `student.name`
-    B - `student["Grad Year"]`
-    C - `student.greeting()`
-    D - `student["Favorite Teacher"].name`
+12. A - `student.name` \ 
+    B - `student["Grad Year"]`\
+    C - `student.greeting()`\
+    D - `student["Favorite Teacher"].name`\
     E - `student.courseLoad[0]`
-13. A - `'3' + 2` yields `32`. The number 2 is converted to a string and concatenated: '3' + '2' = '32'
-    B - `'3' - 2` yields `1`. JavaScript converts '3' to number 3 and performs subtraction.
-    C - `3 + null` yields `3`. null is treated as 0 in numeric contexts.
-    D - `'3' + null` yields `3null`. null becomes 'null' and is concatenated: '3' + 'null' = '3null'
-    E - `true + 3` yields `4`. true is converted to 1.
-    F - `false + null` yields `0`. false → 0, null → 0, 0 + 0 = 0.
-    G - `'3' + undefined` yields `3undefined`. undefined becomes the string 'undefined'.
+13. A - `'3' + 2` yields `32`. The number 2 is converted to a string and concatenated: '3' + '2' = '32'\
+    B - `'3' - 2` yields `1`. JavaScript converts '3' to number 3 and performs subtraction.\
+    C - `3 + null` yields `3`. null is treated as 0 in numeric contexts.\
+    D - `'3' + null` yields `3null`. null becomes 'null' and is concatenated: '3' + 'null' = '3null'\
+    E - `true + 3` yields `4`. true is converted to 1.\
+    F - `false + null` yields `0`. false → 0, null → 0, 0 + 0 = 0.\
+    G - `'3' + undefined` yields `3undefined`. undefined becomes the string 'undefined'.\
     H - `'3' - undefined` yields `NaN`. '3' becomes 3, but undefined cannot be converted to a valid number.
-14. A - `'2' > 1` yields `true`. 2' is coerced to the number 2 → 2 > 1 → true
-    B - `'2' < '12` yields `false`. Both are strings → compared lexicographically → '2' > '1', so false.
-    C - `2 == '2'` yields `true`. == allows type coercion → '2' is converted to 2 → 2 == 2 → true.
-    D - `2 === '2'` yields `false`. === requires strict equality → different types (number vs. string)
-    E - `true == 2` yields `false`. true is converted to 1 → 1 == 2 → false
+14. A - `'2' > 1` yields `true`. 2' is coerced to the number 2 → 2 > 1 → true\
+    B - `'2' < '12` yields `false`. Both are strings → compared lexicographically → '2' > '1', so false.\
+    C - `2 == '2'` yields `true`. == allows type coercion → '2' is converted to 2 → 2 == 2 → true.\
+    D - `2 === '2'` yields `false`. === requires strict equality → different types (number vs. string)\
+    E - `true == 2` yields `false`. true is converted to 1 → 1 == 2 → false\
     F - `true === Boolean(2)` yields `true`. Boolean(2) → true (since 2 is truthy) → true === true → true
 15. The `==` operator checks if two values are equal **after** converting them to the same type. This means it might treat different types as equal if their values are close enough (type coercion). On the other hand, `===` checks if both the **value and the type** are the same. No conversions happen — it’s stricter. Some examples are as follows: 2 == '2' // true  → because the string '2' gets converted to number 2, while 2 === '2' // false → because one is a number and the other is a string
 16. Code present in part2-question16.js
